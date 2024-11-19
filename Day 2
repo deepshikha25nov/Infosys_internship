@@ -1,0 +1,133 @@
+Through the second and third day we came with some installations.
+
+Backend (Spring Boot with JDK 17)
+
+1. Java Development Kit (JDK)
+
+JDK 17 or above (17 is a Long-Term Support version)
+
+Download JDK 17
+
+
+
+2. IntelliJ IDEA (IDE for Backend Development)
+
+IntelliJ IDEA Community or Ultimate Edition (Community is free; Ultimate offers more advanced features)
+
+Version: Latest stable version, e.g., 2023.2.x
+
+Download IntelliJ IDEA
+
+
+
+3. Spring Initializr (To generate a Spring Boot starter project)
+
+Can be accessed directly through IntelliJ or online at start.spring.io.
+
+
+
+
+Database
+
+Choose between MySQL and MongoDB, or use both depending on your project’s needs.
+
+1. MySQL Community Server
+
+Version: 8.0.x
+
+Download MySQL
+
+MySQL Workbench (optional but recommended for managing MySQL databases)
+
+Version: 8.0.x
+
+Download MySQL Workbench
+
+
+
+
+2. MongoDB Community Edition
+
+Version: 6.x
+
+Download MongoDB
+
+MongoDB Compass (optional GUI for MongoDB management)
+
+Version: 1.36.x or latest stable
+
+Download MongoDB Compass
+
+
+
+
+
+Frontend (React with npm)
+
+1. Node.js (includes npm)
+
+Version: 18.x LTS (recommended for stability)
+
+Download Node.js
+
+
+
+2. Visual Studio Code (VS Code)
+
+Version: Latest stable version, e.g., 1.83.x
+
+Download VS Code
+
+
+
+3. Create React App (for setting up the React application)
+
+Install via npm after installing Node.js:
+
+npx create-react-app my-app
+
+
+
+
+API Testing (Optional but Recommended)
+
+1. Postman (for testing APIs)
+
+Version: Latest stable version
+
+Download Postman
+
+
+
+
+Additional Tools
+
+1. Git (version control)
+
+Version: Latest stable version, e.g., 2.42.x
+
+Download Git
+
+
+
+
+
+
+Summary of Installation Steps
+
+1. Install JDK 17.
+
+
+2. Install IntelliJ IDEA and configure with Maven.
+
+
+3. Install MySQL or MongoDB, with GUI tools as needed.
+
+
+4. Install Node.js (includes npm) and set up VS Code.
+
+
+5. Set up React with Create React App.
+
+
+6. Install Postman for API testing, Git for version control.
