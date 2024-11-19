@@ -1,0 +1,61 @@
+Learned about Git and Github.
+  Git is a powerful version control system that tracks changes in source code over time. GitHub is a popular platform that provides hosting for Git repositories, enabling collaboration and sharing of code.
+
+Basic Git Commands
+
+Initialization:
+
+git init: Creates a new Git repository in the current directory.
+Configuration:
+
+git config --global user.name "Your Name": Sets your name for Git commits.
+git config --global user.email "your_email@example.com": Sets your email for Git commits.
+Status Check:
+
+git status: Shows the current state of the working directory.
+Adding Changes:
+
+git add <filename>: Adds a specific file to the staging area.
+git add .: Adds all changes in the working directory to the staging area.
+Committing Changes:
+
+git commit -m "Commit message": Commits the staged changes with a descriptive message.
+Viewing Commit History:
+
+git log: Shows the commit history.
+Checking File Differences:
+
+git diff <filename>: Shows the differences between the working directory and the last commit.
+git diff --staged: Shows the differences between the staged changes and the last commit.
+Undoing Changes:
+
+git checkout -- <filename>: Discards changes to a specific file.
+git reset --hard HEAD: Resets the current HEAD to the previous commit, discarding all changes.
+Creating and Switching Branches:
+
+git branch <branch_name>: Creates a new branch.
+git checkout <branch_name>: Switches to an existing branch.
+Merging Branches:
+
+git merge <branch_name>: Merges the specified branch into the current branch.
+Remote Repositories:
+git remote add origin <remote_repository_url>: Adds a remote repository.
+git push origin <branch_name>: Pushes the current branch to the remote repository.
+git pull origin <branch_name>: Pulls changes from the remote repository and merges them into the current branch.
+GitHub Commands
+
+Creating a Repository:
+
+Create a new repository on GitHub's website.
+Cloning a Repository:
+
+git clone <repository_url>: Clones a remote repository to your local machine.
+Pushing Changes to GitHub:
+
+git push origin <branch_name>: Pushes your local branch to the remote repository on GitHub.
+Pulling Changes from GitHub:
+
+git pull origin <branch_name>: Pulls changes from the remote repository on GitHub and merges them into your local branch.
+Creating a Pull Request:
+
+Create a pull request on GitHub to propose changes to a repository.
