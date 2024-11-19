@@ -2,4 +2,96 @@ Here we came up with learning Springboot and Java.
 This is the link of the sprinoot channel:
   https://www.youtube.com/playlist?list=PLsyeobzWxl7qbKoSgR5ub6jolI8-ocxCF
 
+Spring MVC Annotations
+@RequestMapping
+
+Maps HTTP requests (GET, POST, PUT, DELETE, etc.) to specific handler methods.
+Defines the URL pattern to be matched.
+example:
+@RestController
+public class MyController {
+    @RequestMapping("/hello")
+    public String sayHello() {
+        return "Hello, World!";
+    }
+}
+
+
+This maps the /hello endpoint to the sayHello() method.
+
+
+@RequestBody
+Binds the request body to a method parameter.
+Used for POST, PUT, and PATCH requests.
+example:
+@PostMapping("/user")
+public User createUser(@RequestBody User user) {
+    // Process the user object
+    return userService.createUser(user);
+}
+
+This binds the JSON or XML request body to a User object.
+
+
+@PathVariable
+Extracts dynamic values from the URL path.
+example:
+@GetMapping("/users/{userId}")
+public User getUser(@PathVariable Long userId) {
+    return userService.getUserById(userId);
+}
+
+This extracts the userId from the URL and passes it to the getUserById() method.
+
+
+Spring Core Annotations
+@Autowired
+
+Automatically injects dependencies by type.
+example:
+@Service
+public class MyService {
+    @Autowired
+    private MyRepository repository;
+
+    public void doSomething() {
+        repository.save(data);
+    }
+}
+
+This injects the MyRepository bean into the MyService bean.
+
+
+@Service
+Indicates a class as a service layer component.
+Often used for business logic.
+
+
+@Component
+A generic stereotype for any Spring-managed component.
+Can be used on any class that needs to be managed by the Spring container.
+
+Spring Web Annotations
+@RestController
+A specialization of the @Controller annotation.
+Marks a class as a controller, returning JSON or XML directly.
+
+@Override
+Indicates that a method overrides a method in a superclass or interface.
+example:
+@Service
+public class MyServiceImpl implements MyServiceInterface {
+    @Override
+    public void doSomething() {
+        // Implementation
+    }
+}
+
+This marks the doSomething() method as overriding the method in the MyServiceInterface.
+
+
+
+
+By effectively using these annotations, you can create well-structured, maintainable, and efficient Spring applications.
+
   
